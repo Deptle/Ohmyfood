@@ -1,3 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+body {
+  margin: 0;
+}
 
+h1, h2, h3, p, a {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.location {
+  width: 100%;
+  height: 48px;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.location svg {
+  fill: #353535;
+}
+.location .location__text {
+  text-align: center;
+  margin-left: 8px;
+  color: #353535;
+  font-weight: bold;
+}
+
+.hero {
+  margin-top: 8px;
+  height: fit-content;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.hero .hero__title {
+  font-size: 28px;
+  margin: 8px 0 8px 0;
+}
+.hero .hero__text {
+  font-size: 18px;
+  color: #353535;
+  margin: 8px 0 8px 0;
+}
+.hero .hero__button {
+  padding: 16px;
+  border-radius: 32px;
+  text-decoration: none;
+  color: white;
+  background: #9356DC;
+  background: linear-gradient(355deg, #9356DC 0%, #FF79DA 100%);
+  margin: 32px 0 32px 0;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
+  transition: 150ms;
+}
+.hero .hero__button:hover {
+  opacity: 75%;
+  font-size: 16.1px;
+}
+
+.fonctionnement {
+  padding: 48px 24px 48px 24px;
+}
+.fonctionnement .fonctionnement__items {
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement .fonctionnement__items .fonctionnement__items__item {
+  background-color: #f6f6f6;
+  padding: 24px;
+  margin: 16px 0 16px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 24px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+.fonctionnement .fonctionnement__items .fonctionnement__items__item .fonctionnement__items__item__id {
+  background-color: #9356DC;
+  padding: 4px 9px 4px 9px;
+  border-radius: 50%;
+  margin-left: -36px;
+  color: white;
+}
+.fonctionnement .fonctionnement__items .fonctionnement__items__item svg {
+  fill: #7e7e7e;
+  transform: scale(1.25);
+  margin: 0 16px 0 16px;
+}
+.fonctionnement .fonctionnement__items .fonctionnement__items__item .fonctionnement__items__item__title {
+  font-size: 16px;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 48px 24px 48px 24px;
+}
+.restaurants .restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+.restaurants .restaurants__cards .restaurants__cards__card {
+  width: 100%;
+  height: 140px;
+  margin-bottom: 96px;
+  position: relative;
+}
+.restaurants .restaurants__cards .restaurants__cards__card .restaurants__cards__card__nouveau {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #99E2D0;
+  color: #008161;
+  padding: 6px 12px;
+  border-radius: 4px;
+  z-index: 1;
+}
+.restaurants .restaurants__cards .restaurants__cards__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px 24px 0 0;
+}
+.restaurants .restaurants__cards .restaurants__cards__card .restaurants__cards__card__content {
+  border-radius: 0 0 24px 24px;
+  background-color: white;
+  padding: 12px;
+  margin-top: -4px;
+  position: relative;
+}
+.restaurants .restaurants__cards .restaurants__cards__card .restaurants__cards__card__content .restaurants__cards__card__content__text {
+  margin-top: 4px;
+}
+.restaurants .restaurants__cards .restaurants__cards__card svg {
+  position: absolute;
+  bottom: 24px;
+  right: 16px;
+  fill: black;
+  transform: scale(1.25);
+}
+
+@media (min-width: 768px) {
+  .location {
+    margin-top: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+  .hero {
+    margin-top: 0;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
