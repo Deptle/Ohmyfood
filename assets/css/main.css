@@ -120,6 +120,10 @@ h1, h2, h3, p, a {
   height: 140px;
   margin-bottom: 96px;
   position: relative;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.06);
 }
 .restaurants .restaurants__cards .restaurants__cards__card .restaurants__cards__card__nouveau {
   position: absolute;
@@ -143,6 +147,9 @@ h1, h2, h3, p, a {
   padding: 12px;
   margin-top: -4px;
   position: relative;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.06);
 }
 .restaurants .restaurants__cards .restaurants__cards__card .restaurants__cards__card__content .restaurants__cards__card__content__text {
   margin-top: 4px;
@@ -153,6 +160,28 @@ h1, h2, h3, p, a {
   right: 16px;
   fill: black;
   transform: scale(1.25);
+}
+.restaurants .restaurants__cards .restaurants__cards__card input[type=checkbox] {
+  position: absolute;
+  bottom: 22px;
+  right: 14px;
+  opacity: 0;
+  z-index: 4;
+  transform: scale(1.33, 1.33);
+  cursor: pointer;
+}
+.restaurants .restaurants__cards .restaurants__cards__card input[type=checkbox]:checked + .heart--selected {
+  opacity: 1;
+  z-index: 3;
+  fill: url(#heart-gradient);
+}
+.restaurants .restaurants__cards .restaurants__cards__card .heart--selected {
+  opacity: 0;
+  z-index: 1;
+  transition: 100ms;
+}
+.restaurants .restaurants__cards .restaurants__cards__card .heart--default {
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
