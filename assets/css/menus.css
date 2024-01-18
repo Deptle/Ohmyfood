@@ -170,6 +170,7 @@ main {
   overflow: hidden;
   opacity: 0;
   transform: translateY(-20px);
+  transition: 0.2s ease;
   animation: fadeInUp 0.1s ease-in-out forwards;
 }
 @keyframes fadeInUp {
@@ -226,10 +227,14 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: right 0.1s ease;
+  transition: right 0.2s ease;
+  padding-top: 3px;
 }
 .plats__list__plat:hover::after {
   right: 0;
+}
+.plats__list__plat:hover {
+  padding-right: 76px;
 }
 .plats__list__plat__title {
   overflow: hidden;
